@@ -1,0 +1,291 @@
+/* ### Primary
+
+- Desaturated Red: hsl(0, 36%, 70%)
+- Soft Red: hsl(0, 93%, 68%)
+
+### Neutral
+
+- Dark Grayish Red: hsl(0, 6%, 24%)
+
+### Gradients
+
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weights: 300, 400, 600 */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+  margin: 100px auto;
+  display: flex;
+  /* background-color: red; */
+  justify-content: center;
+  max-width: 75%;
+}
+
+.left-side {
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-size: cover;
+  padding: 6rem 16rem 12rem 8rem;
+}
+
+h1 {
+  margin-top: 12rem;
+  text-transform: uppercase;
+  font-size: 8rem;
+  letter-spacing: 10px;
+  line-height: 1.1;
+}
+
+.thin {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+
+.thick {
+  font-weight: 400;
+  color: hsl(0, 6%, 24%);
+}
+
+.main-text {
+  margin-top: 4rem;
+  color: hsl(0, 36%, 70%);
+  font-size: 2.1rem;
+  line-height: 1.8;
+}
+
+.right-side {
+  background-image: url(images/hero-desktop.jpg);
+  width: 100%;
+  background-size: cover;
+  min-width: 60rem;
+}
+
+.cta {
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.input-field {
+  /* border: none; */
+  margin-top: 3rem;
+  border-radius: 100px;
+  height: 3rem;
+  width: 90%;
+  padding: 3rem;
+  border: 1px hsl(0, 80%, 86%) solid;
+  font-family: inherit;
+  font-size: 2rem;
+  margin-right: -12.4rem;
+}
+
+.input-field:focus {
+  /* outline: solid 1px hsl(0, 74%, 74%); */
+  /* border-bottom: 1px solid hsl(0, 74%, 74%); */
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: hsla(0, 80%, 86%, 0.849);
+  font-family: inherit;
+}
+
+.input-field::-webkit-input-placeholder {
+  color: hsla(0, 80%, 86%, 0.849);
+  font-family: inherit;
+}
+
+.border-invalid {
+  outline: solid 1px hsl(0, 93%, 68%);
+}
+
+.error-icon {
+  transform: translateY(5px);
+}
+
+.invisible {
+  opacity: 0;
+  visibility: hidden;
+  /* transform: translateY(-4rem); */
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn {
+  padding: 1rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 80%, 86%),
+    hsl(0, 74%, 74%)
+  );
+
+  border-radius: 100px;
+  border: none;
+  width: 12rem;
+  /* position: absolute; */
+  /* display: block; */
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 2rem 4rem rgba(#000, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.arrow-right-icon {
+  font-size: 4rem;
+  color: #fff;
+  display: inline-block;
+}
+
+.img-mobile {
+  display: none;
+}
+
+label {
+  /* font-size: 15rem; */
+  display: block;
+  font-size: 5rem;
+  font-size: 1.5rem;
+  /* transform: translateY(5rem); */
+  margin-top: 1rem;
+  margin-left: 3rem;
+  position: absolute;
+  color: hsl(0, 93%, 68%);
+  /* visibility: hidden; */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 58em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 47em) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    flex-direction: column;
+    margin: 3rem auto;
+    max-width: 375px;
+    height: auto;
+  }
+
+  .right-side {
+    background-image: url();
+  }
+
+  .left-side {
+    background-image: linear-gradient(
+      to right,
+      hsl(0, 100%, 98%),
+      hsl(0, 100%, 98%)
+    );
+    background-size: cover;
+    padding: 6rem 0 8rem 0;
+    text-align: center;
+  }
+
+  .img-mobile {
+    margin-top: 4rem;
+    display: block;
+    width: 100%;
+  }
+
+  h1 {
+    margin-top: 8rem;
+    text-transform: uppercase;
+    font-size: 6rem;
+    letter-spacing: 10px;
+    line-height: 1.1;
+  }
+
+  .main-text {
+    margin-top: 4rem;
+    color: hsl(0, 36%, 70%);
+    font-size: 2.1rem;
+    line-height: 1.8;
+    padding: 0 2rem;
+  }
+
+  .input-field {
+    /* border: none; */
+    margin-top: 3rem;
+    border-radius: 100px;
+    height: 3rem;
+    width: 80%;
+    padding: 3rem;
+    border: 1px hsl(0, 80%, 86%) solid;
+    font-family: inherit;
+    font-size: 2rem;
+    margin-right: 0;
+  }
+
+  .btn {
+    width: 8rem;
+
+    position: absolute;
+    bottom: 0px;
+    right: 4rem;
+    cursor: pointer;
+  }
+
+  .error-icon {
+    position: absolute;
+    bottom: 2.3rem;
+    right: 14rem;
+  }
+
+  label {
+    margin-left: 8rem;
+  }
+}

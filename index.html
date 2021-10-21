@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="left-side">
+          <header>
+            <img src="images/logo.svg" alt="logo of the webpage" class="logo" />
+          </header>
+          <div class="mobile-img">
+            <img
+              src="images/hero-mobile.jpg"
+              alt="img of a woman"
+              class="img-mobile"
+            />
+          </div>
+          <h1>
+            <span class="thin">We're</span>
+            <span class="thick">coming soon</span>
+          </h1>
+          <p class="main-text">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <div class="cta">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="input-field"
+              required
+              id="email"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              class="error-icon invisible"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle cx="12" cy="12" r="12" fill="#F96464" />
+                <path
+                  fill="#FFF"
+                  fill-rule="nonzero"
+                  d="M13.256 6v9.056h-2V6h2zm-.944 12.464c-.384 0-.699-.104-.944-.312a1.027 1.027 0 0 1-.368-.824c0-.33.125-.608.376-.832.25-.224.563-.336.936-.336.373 0 .68.112.92.336.24.224.36.501.36.832 0 .341-.117.616-.352.824-.235.208-.544.312-.928.312z"
+                />
+              </g>
+            </svg>
+            <button class="btn">
+              <ion-icon
+                name="chevron-forward-outline"
+                class="arrow-right-icon"
+              ></ion-icon>
+            </button>
+            <label for="email">Please provide a valid email</label>
+          </div>
+        </div>
+        <div class="right-side">
+          <!-- <img src="images/hero-desktop.jpg" alt="img of a woman" /> -->
+        </div>
+      </div>
+    </main>
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
